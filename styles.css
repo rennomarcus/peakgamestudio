@@ -1,0 +1,59 @@
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color: #0f172a;
+  /* Sunset gradient background */
+  background: linear-gradient(180deg,
+    #120b2e 0%,           /* deep indigo top */
+    #2a1b6b 20%,          /* twilight purple */
+    #f37335 55%,          /* tangerine */
+    #fdc830 75%,          /* golden */
+    #ffd7a8 100%          /* soft peach near horizon */
+  );
+  /* Fallback color while the gradient loads */
+  background-color: #2a1b6b;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+}
+
+/* Center stage */
+.center {
+  display: grid;
+  place-items: center;
+  padding: 6vh 4vw;
+}
+
+/* Crisp, scalable logo */
+.logo {
+  width: min(56vmin, 520px);
+  height: auto;
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,0.22));
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Optional brand text style */
+.brand {
+  margin-top: 1.25rem;
+  font-size: clamp(1.25rem, 2.2vw + 1rem, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0b1020;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.35);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0.5rem 2rem;
+  color: rgba(15,23,42,0.82);
+  font-size: 0.95rem;
+}
+
+/* Support high-contrast preference */
+@media (prefers-contrast: more) {
+  .logo { filter: none; }
+  .brand, .footer { color: #0b1020; }
+}

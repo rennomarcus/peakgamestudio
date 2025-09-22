@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Company mountain symbol</title>
+  <desc id="desc">Three simple overlapping mountain strokes, the center peak is tallest.</desc>
+  <defs>
+    <linearGradient id="ink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="50%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="crisp">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Guidelines: keep paths on half-pixel to render crisp strokes -->
+  <g fill="none" stroke="url(#ink)" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" filter="url(#crisp)">
+    <!-- Left medium mountain -->
+    <path d="M 120 430 L 340 250 L 520 430" />
+    <!-- Tall center mountain (overlaps others) -->
+    <path d="M 380 430 L 610 150 L 860 430" />
+    <!-- Right slightly smaller mountain -->
+    <path d="M 700 430 L 920 270 L 1080 430" />
+  </g>
+</svg>

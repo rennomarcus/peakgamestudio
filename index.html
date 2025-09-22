@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peak</title>
+  <meta name="description" content="A minimal landing page with a crisp mountain mark on a sunset gradient." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="center">
+    <!-- Company symbol -->
+    <img src="assets/logo.svg" alt="Company mountain symbol" class="logo" />
+    <!-- Optional caption (commented). Uncomment and edit if you want text under the symbol. -->
+    <!-- <h1 class="brand">Peak</h1> -->
+  </main>
+  <footer class="footer">
+    <span>© <span id="year"></span>Peak Game Studio</span>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
